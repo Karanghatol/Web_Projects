@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo form</title>
+    <link rel="stylesheet" href="FormDemo.css" />
+</head>
+
+<!--  javascript -->
+<script>
+    function show() {
+        alert("Click 'OK' to Check");
+    }
+
+    // function rs(){
+    //     alert("Reseting Form");
+    // }
+</script>
+
+<body>
+    <div class="container">
+    <div class="head">
+        Registration Form
+    </div>
+
+    <!-----------     FOR_FORM       ------------------>
+
+    <div class="for_form">
+    <form action="form.php" method="post">
+        <label type="text" for="fname" class="lable_sub"><b> First Name</b></label>
+        <br>
+        <input type="text" name="fname" id="FirstName" placeholder="First Name" />
+        <br>
+        <label for="Lname" class="lable_sub"><b>Last Name</b></label>
+        <br>
+        <input type="text" name="lname" id="LastName" placeholder="Last Name" />
+        <br>
+        <label for="Gender" class="lable_sub"><b>Gender</b></label>
+        <div class="Gender">
+            <input type="radio" name="gender" placeholder="Male" class="Gender_input" value="m" />
+            <label class="label_Gender">Male</label>
+            <input type="radio" name="gender" placeholder="Male" class="Gender_input" value="f" />
+            <label class="label_Gender">Female</label>
+            <input type="radio" name="gender" placeholder="Male" class="Gender_input" value="o" />
+            <label class="label_Gender">Other</label>
+        </div>
+        <label for="email" class="lable_sub"><b>Email</b></label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="email" />
+        <br>
+        <label for="password" class="lable_sub"><b>Password</b></label>
+        <br>
+        <input type="password" name="password" id="pass" placeholder="Password" />
+        <br>
+        <label for="number" class="lable_sub"><b>Mobile Number</b></label>
+        <br>
+        <input type="number" name="number" placeholder="mobile number" />
+        <br>
+        <center>
+            <input type="submit" onclick="show()" class="submit" />
+            <input type="reset" onclick="window.alert(['Clearing Form!!!'])" class="submit" />
+            
+        </center>
+    </form>
+    </div>
+    </div>
+</body>
+
+</html>
