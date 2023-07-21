@@ -29,20 +29,3 @@
         $conn->Close();
     }
 ?>
-<!-- 
-<br>
-<br>
-<body bgcolor="green">
-</style>
-<button onclick="history.back()" 
-    style="
-    width: 140px;
-    height: 35px;
-    border: 1px solid black;
-    color: white;
-    background-color: red;
-    font-size: 26px;
-    border-radius: 12px;
-    ">Go Back</button>
-</body> -->
-</center>
